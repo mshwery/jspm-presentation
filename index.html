@@ -70,14 +70,39 @@
 $ jspm install jquery
 $ jspm install npm:lodash
 $ jspm install lodash=npm:lodash</code></pre>
+    </section>
 
-      <pre class='language-javascript'><code language='javascript'>// my-module.js
-import $ from 'jquery';
-import _ from 'lodash';</code></pre>
+    <section>
+      <pre class='language-javascript'><code language='javascript'>// my-module.js (ES6)
+import $    from 'jquery';
+import _    from 'lodash';
+import mage from './mage-class';
+
+$(document).ready(=> {
+  let diceRoll = _.times(3, n => mage.castSpell(n));
+});</code></pre>
+    </section>
+
+    <section>
+      <pre class='language-javascript'><code language='javascript'>// my-module.js (AMD/CommonJS)
+var $     = require('jquery');
+var _     = require('lodash');
+var mage  = require('./mage-class');
+
+$(document).ready(function() {
+  var diceRolls = _.times(3, function(n) {
+    mage.castSpell(n);
+  });
+});</code></pre>
     </section>
 
     <section>
       <pre class='language-bash'><code language='bash'>$ jspm bundle my-module public/bundle.js --inject</code></pre>
+    </section>
+
+    <section>
+      <p>simple builds: npm scripts + jspm</p>
+      <p>complex builds: npm scripts + jspm + gulp</p>
     </section>
 
   </article>
