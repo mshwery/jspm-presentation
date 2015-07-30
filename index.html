@@ -1,0 +1,67 @@
+<!doctype html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <title>JSPM the module loader / package manager</title>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+
+  <script src='jspm_packages/system.js'></script>
+  <script src='config.js'></script>
+</head>
+<body>
+  <article>
+
+    <section>
+      <h1>JSPM</h1>
+      <p>the module loader / package manager</p>
+      <img class='avatar' src='https://avatars0.githubusercontent.com/u/710752?v=3&s=460'/>
+      <a href='https://twitter.com/mshwery'>@mshwery</a>
+    </section>
+
+    <section>
+      <blockquote cite='http://jspm.io/'>Frictionless browser package management</blockquote>
+    </section>
+
+    <section>
+      <h2>
+        one-line install<br>one-line require
+      </h2>
+      <p class='bullets'>avoid unnecessary complexity</p>
+      <p class='bullets'>package manager must understand the loader</p>
+      <p class='bullets'>avoid problems of configuration friction</p>
+    </section>
+
+    <section>
+      <h2>what is JSPM?</h2>
+      <p class='bullets'>systemjs</p>
+      <p class='bullets'>es6 module loader polyfill 7KB</p>
+      <p class='bullets'>compat layer for AMD, CommonJS, and globals</p>
+      <p class='bullets'>bundles, plugins (css, json, images)</p>
+    </section>
+
+    <section data-bespoke-backdrop='back-to-the-future'>
+      <p class='bullet'>based on technology specified for the <span class='underline'>future<span></p>
+      <p class='bullet'>that we can use <span class='underline'>today</span></p>
+    </section>
+
+    <section>
+      <p>dependency management</p>
+      <p>support multi-versions, with auto deduping</p>
+      <p>follows semver</p>
+    </section>
+
+    <section data-bespoke-backdrop='browserify'>
+      <h2>How is this different than Browserify?</h2>
+    </section>
+
+    <section>
+      <p>no build tool or task running required.<p>
+      <p>it's all run and compiled in the browser</p>
+    </section>
+
+  </article>
+
+  <script>
+    System.import('presentation');
+  </script>
+</body>
