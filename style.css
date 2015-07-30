@@ -218,31 +218,22 @@ h4 {
 }
 
 .bespoke-backdrop {
-  -webkit-transition: opacity 1s ease;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease,-webkit-transform 2s ease;
-  transition: opacity 1s ease,transform 2s ease;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  -webkit-transform: translateZ(0)scale(1.3);
-  transform: translateZ(0)scale(1.3);
   z-index: -1;
 }
 
 .bespoke-backdrop-active {
   opacity: .75;
-}
-
-.bespoke-backdrop-active,
-.bespoke-backdrop-before {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 .bespoke-backdrop-before {
@@ -268,4 +259,27 @@ h4 {
   background-image: url('https://avatars0.githubusercontent.com/u/6200624?v=3&s=400');
   background-size: contain;
   background-color: white;
+}
+
+.bespoke-backdrop.friends-yay {
+  background-image: url('http://i47.tinypic.com/esmh6e.gif');
+  background-size: contain;
+}
+
+.bespoke-backdrop.fascinating {
+  background-image: url('http://33.media.tumblr.com/43bce6138166c2b82a3834e2bbf13dcc/tumblr_inline_nppl32WbjK1sozm48_500.gif');
+  background-size: contain;
+}
+
+.bespoke-backdrop.eyebrows {
+  background-image: url('http://mrwgifs.com/wp-content/uploads/2013/07/Stephen-Colbert-Eyebrow-Dance-Gif.gif');
+  background-size: contain;
+}
+
+.bespoke-backdrop.brad-pitt {
+  background-image: url('http://media.giphy.com/media/VGJPsBvlsHDyw/giphy.gif');
+}
+
+.brad-pitt.bespoke-backdrop-active {
+  opacity: .5;
 }
