@@ -59,15 +59,26 @@
       <p>it's all run and compiled in the browser</p>
     </section>
 
-    <section>
-      <h2>What about npm?</h2>
+    <section data-bespoke-backdrop='npm'>
+    </section>
+
+    <section data-bespoke-backdrop='gulp'>
     </section>
 
     <section>
-      <h2>Or gulp?</h2>
+      <pre class='language-bash'><code language='bash'>$ npm install jspm -g
+$ jspm install jquery
+$ jspm install npm:lodash
+$ jspm install lodash=npm:lodash</code></pre>
+
+      <pre class='language-javascript'><code language='javascript'>// my-module.js
+import $ from 'jquery';
+import _ from 'lodash';</code></pre>
     </section>
 
-    
+    <section>
+      <pre class='language-bash'><code language='bash'>$ jspm bundle my-module public/bundle.js --inject</code></pre>
+    </section>
 
   </article>
 

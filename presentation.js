@@ -21,4 +21,7 @@ bespoke.from('article', [
 ]);
 
 // Prism syntax highlighting
-// require('prism');
+import prism from 'prism';
+import './jspm_packages/github/PrismJS/prism@1.0.1/themes/prism-okaidia.css!';
+
+prism.highlightAll();

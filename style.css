@@ -19,6 +19,15 @@ article {
   display: none;
 }
 
+pre {
+  text-align: left;
+  white-space: inherit;
+}
+
+code {
+  white-space: pre-line;
+}
+
 .avatar {
   border-radius: 50%;
   width: 4rem;
@@ -227,7 +236,7 @@ h4 {
 }
 
 .bespoke-backdrop-active {
-  opacity: .5;
+  opacity: .75;
 }
 
 .bespoke-backdrop-active,
@@ -248,4 +257,15 @@ h4 {
 .bespoke-backdrop.browserify {
   background-image: url('http://browserify.org/images/wizard_hat_blue.png');
   background-size: contain;
+}
+
+.bespoke-backdrop.npm {
+  background-image: url('https://raw.githubusercontent.com/isaacs/npm/master/html/npm-256-square.png');
+  background-size: contain;
+}
+
+.bespoke-backdrop.gulp {
+  background-image: url('https://avatars0.githubusercontent.com/u/6200624?v=3&s=400');
+  background-size: contain;
+  background-color: white;
 }
